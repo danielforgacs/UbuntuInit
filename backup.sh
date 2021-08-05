@@ -1,5 +1,5 @@
 dirdate=$(date +%Y-%m-%d_%H-%M-%S)
-bkproot=/media/ford/SMALL_BKP/__BACKUP__/backup_$dirdate
+bkproot=/media/ford/PEN_128/__BACKUP__/backup_$dirdate
 storagesrc=$HOME/storage/
 storagedest=$bkproot/storage/
 
@@ -44,9 +44,9 @@ time diff -r -q \
 	$storagesrc $storagedest \
 	| tee $bkproot/DIFF.log
 
-echo "--> checksums:"
-
-time find $storagedest -type f -exec sha512sum {} \; | tee $bkproot/CHECKSUMS.txt
+# echo "--> checksums:"
+#
+# time find $storagedest -type f -exec sha512sum {} \; | tee $bkproot/CHECKSUMS.txt
 
 echo "--> storage size:"
 du -c -h -s $storagedest
