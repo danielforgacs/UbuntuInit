@@ -1,5 +1,5 @@
 dirdate=$(date +%Y-%m-%d_%H-%M-%S)
-bkproot=/media/ford/SMALL_BKP/__BACKUP__/backup_$dirdate
+bkproot=/media/ford/PEN_128/__BACKUP__/backup_$dirdate
 storagesrc=$HOME/storage/
 storagedest=$bkproot/storage/
 
